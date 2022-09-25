@@ -13,3 +13,9 @@ By default, application will run using in memory H2. However, you can define you
 ### Swagger
 `http://localhost:8080/swagger-ui/index.html`
 
+### Docker
+ - Run `mvn package` to create jar file
+ - Run `docker image build -t account-service:latest .` in root directory to build image from docker file
+ - Run `docker run -p 8080:8080 account-service:latest`
+
+Application will start running in docker container with default H2 database
